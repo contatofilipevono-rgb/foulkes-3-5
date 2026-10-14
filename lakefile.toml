@@ -1,0 +1,11 @@
+name = "foulkes35"
+version = "0.1.0"
+defaultTargets = ["Foulkes35_Scaffold"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.15.0"
+
+[[lean_lib]]
+name = "Foulkes35_Scaffold"
