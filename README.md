@@ -6,7 +6,7 @@ Independent project, separate from V1/V2/V3-C cryptography.
 
 The exact arithmetic certificate claims a 95 × 190 integer identity M_K c = 746496 e_u. The existing offline certificate has passed Python audits. **No Lean kernel validation or complete Foulkes–Howe formalization has yet been established.**
 
-This repository starts with a CI-ready Lean project and a small transport lemma. The full 95-row generated module and source datasets are currently in the offline research bundle, and must be imported before a complete certificate CI check can be claimed.
+This repository starts with a Lean project and CI configuration and a small transport lemma. The full 95-row generated module and source datasets are currently in the offline research bundle, and must be imported before a complete certificate CI check can be claimed.
 
 ## What the public repository currently proves
 
@@ -22,6 +22,12 @@ The offline certificate status above is reported by the project; the complete da
 4. Import and check the complete Lean certificate and publish theorem signatures and axiom reports.
 
 This is a separate project from the [bent research portfolio](https://github.com/contatofilipevono-rgb/hrsbf-bent-verification).
+
+## Automated build status — 8 November 2026
+
+The current workflow fails before certificate checking because `lake-manifest.json` is missing. The same workflow was already failing on the previous main commit `157ac44bc1d672f017fee11ce3a40fca19b45864`; the documentation change does not modify the Lean sources or workflow.
+
+See the [recorded run and diagnostic](https://github.com/contatofilipevono-rgb/foulkes-3-5/actions/runs/42498947748). Generate, review and commit the dependency manifest, then obtain a successful scaffold build before describing CI as ready. A successful scaffold build would still not verify the missing full certificate.
 
 ## Commands
 
